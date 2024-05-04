@@ -1,0 +1,64 @@
+.jersey-20-regular {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#gameOver {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+#start, #stop { /* Estilos para ambos botones */
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(20, 54, 149);
+    color: aliceblue;
+    cursor: pointer; /* Cambiar cursor a pointer para indicar que es clickeable */
+    border: none; /* Eliminar borde */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 0 10px; /* Margen para separar los botones */
+}
+
+#board, .boardInfo {
+    font-family: "Oswald", sans-serif;;
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#start, #stop, .boardInfo {
+    font-size: 20px;
+}
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: #456990;
+}
+
+.snakeSquare {
+    background-color: #ccf47f;
+}
+
+.foodSquare {
+    background-color: rgb(20, 54, 149);
+}
